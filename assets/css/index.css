@@ -13,6 +13,10 @@ header {
     background-color: #141024;
 }
 
+button {
+    border: 0;
+}
+
 .header-menu {
     display: flex;
     margin-top: 8px;
@@ -65,7 +69,6 @@ header {
     font-size: 18px;
     margin-top: 50px;
     border-radius: 5px;
-    border: 0;
 
     transition:
         0.3s ease background-color,
@@ -152,7 +155,7 @@ header {
     font-family: 400;
     padding: 15px 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 8px 0 #1410241A;
+    box-shadow: 0 2px 8px 0 #1410241a;
 }
 
 .info {
@@ -168,4 +171,83 @@ header {
     align-items: center;
     font-size: 18px;
     cursor: pointer;
+}
+.people-item-image {
+    width: 500px;
+    border-radius: 20px;
+}
+.people-items {
+    display: flex;
+    column-gap: 40px;
+}
+.people-title {
+    font-size: 50px;
+}
+.people {
+    padding: 120px 360px;
+    overflow-x: hidden;
+    position: relative;
+}
+.arrows div {
+    background-color: #14102414;
+    cursor: pointer;
+}
+.arrows {
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    right: 390px;
+}
+.cards-item {
+    height: 460px;
+    width: 360px;
+    border: 1px solid #14102433;
+    padding: 40px 55px 65px 55px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transition:
+        0.3s ease background-color,
+        0.3s ease transform;
+}
+
+.cards-item:hover {
+    background-color: #141024;
+    transform: scale(1.05);
+}
+
+.cards-item:hover p {
+    color: white;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+.card-price {
+    font-size: 50px;
+}
+
+.card-description {
+    font-size: 18px;
+    text-align: center;
+}
+
+.cards-item button {
+    padding: 25px 78px;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: #d52027;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.3s ease background-color;
+}
+
+.cards-item button:hover {
+    background-color: blue;
 }
